@@ -22,10 +22,10 @@ describe('User registration POST route' , () =>{
                 password: data.password
             })
         )
-        app.use(accountsRouter({ createUser }))
+        app.use('/accounts', accountsRouter({ createUser }))
         
         const response = await request(app)
-            .post('/user')
+            .post('/accounts/user')
             .send({
                 first_name: 'John', 
                 last_name: 'Legend', 

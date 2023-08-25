@@ -5,6 +5,7 @@ const router = Router()
 
 const routesWrapper = (db) =>{
     router.post('/user', register_user(db))
+    router.get('/user', (res, req) =>{res.json({ word: 'word'})})
 
     return router
 }

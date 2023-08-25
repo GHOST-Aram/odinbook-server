@@ -3,7 +3,7 @@ export const error500 = (err, req, res, next) =>{
 		res.status(500).json({
 		  error: {
 			status: 500,
-			message: 'Unexpected error occured.'
+			message: err.message
 		  }
 	  });
 	}

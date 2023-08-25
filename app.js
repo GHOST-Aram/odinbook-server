@@ -6,7 +6,7 @@ import { db } from './zghost/db/database.js';
 
 config()
 
-app.use(accountsRouter(db))
+app.use('/accounts', accountsRouter(db))
 
 app.use(error404)
 app.use(error500)
