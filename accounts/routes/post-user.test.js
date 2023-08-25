@@ -14,6 +14,7 @@ describe('User registration POST route' , () =>{
     test('User registration POST  route works', async()=>{
         const createUser = jest.fn().mockImplementation(
             (model, data) =>({
+                _id: 'ncjsdnis9dfunewf3432dwe',
                 first_name: data.first_name,
                 last_name: data.last_name,
                 username: data.username,
@@ -46,6 +47,7 @@ describe('User registration POST route' , () =>{
         })
         expect(createUser).toHaveReturned()
         expect(createUser).toHaveReturnedWith({
+            _id: expect.any(String),
             first_name: 'John', 
             last_name: 'Legend', 
             username: 'johnlegend',
@@ -55,10 +57,7 @@ describe('User registration POST route' , () =>{
         expect(response.headers['content-type']).toMatch(/json/)
         expect(response.status).toEqual(200)
         expect(response.body).toStrictEqual({
-            first_name: 'John', 
-            last_name: 'Legend', 
-            username: 'johnlegend',
-            email: 'johnlegend@gmail.com'
+            userId: expect.any(String)
         })
 
     })

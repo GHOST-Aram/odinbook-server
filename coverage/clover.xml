@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1692944275545" clover="3.2.0">
-  <project timestamp="1692944275545" name="All files">
+<coverage generated="1692944912599" clover="3.2.0">
+  <project timestamp="1692944912599" name="All files">
     <metrics statements="16" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="20" coveredelements="19" complexity="0" loc="16" ncloc="16" packages="5" files="5" classes="5"/>
     <package name="accounts.controllers">
       <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -12,7 +12,7 @@
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
       </file>
     </package>
     <package name="accounts.models">

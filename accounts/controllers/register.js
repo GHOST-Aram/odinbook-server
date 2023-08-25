@@ -19,10 +19,7 @@ export const register_user = (db) =>{
             })
          
             res.status(200).json({
-                first_name: user.first_name,
-                last_name: user.last_name,
-                username: user.username,
-                email: user.email
+                userId: user._id
             })
         } catch (error) {
             res.status(500).json({error:{
